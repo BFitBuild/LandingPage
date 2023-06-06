@@ -34,6 +34,13 @@
 	
 	<!-- ================= HEADER ================= -->
 	<header class="header">
+		<style>
+			header{
+				position:fixed;
+				z-index: 9999;
+				background-color:#272a31;
+			}
+		</style>
 		<a href="#" class="nav-btn">
 			<span></span>
 			<span></span>
@@ -41,11 +48,23 @@
 		</a>
 		<div class="top-panel">
 			<div class="container">
-				<div class="header-left">
-					<ul class="header-cont">
-						<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:18004886040">1-726-256-0630</a></li>
-						<li><i class="fa fa-clock-o" aria-hidden="true"></i>Mon - Fri: 8:00AM - 7:00PM | Sat - Sun: Closed</li>
-					</ul>
+				<div class="header-logo">
+					<a href="index.html" class="logo"><img src="assets/img/brandmark-design.png" alt="logo"></a>
+				</div>
+				<div class="header-menu">
+					<div class="container">
+						<nav class="nav-menu">
+							<ul class="nav-list">
+								<li class="menu-active"><a href="#section1">Home</a></li>
+								<li><a href="#section2">About</a></li>
+								<li><a href="#section3">Product Features</a></li>
+								<li><a href="#section4">Our Team</a></li>
+								<li><a href="#section5">Memberships</a></li>
+								<li><a href="#section6">Roadmap</a></li>
+								<li><a href="#section7">Waitlist</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 				<div class="header-right">
 					<form class="search-form">
@@ -53,48 +72,16 @@
 						<button type="submit" class="search-form__submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 					<ul class="social-list">
-						<li><a target="_blank" href="https://www.facebook.com/rovadex"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a target="_blank" href="https://twitter.com/RovadexStudio"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a target="_blank" href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 						<li><a target="_blank" href="https://www.instagram.com/rovadex"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-			</div>
-		</div>
-		<div class="header-menu">
-			<div class="container">
-				<div class="header-logo">
-					<a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="logo"></a>
-				</div>
-				<nav class="nav-menu">
-					<ul class="nav-list">
-						<li class="dropdown">
-							<a href="#">Home <i class="fa fa-caret-down"></i></a>
-							<ul>
-								<li class="menu-active"><a href="index.html">Crossfit</a></li>
-								<li><a href="home-fitness.html">Fitness</a></li>
-								<li><a href="home-crossfit-lite.html">Crossfit Lite</a></li>
-							</ul>
-						</li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Shop</a></li>
-						<li class="dropdown">
-							<a href="#">Articles <i class="fa fa-caret-down"></i></a>
-							<ul>
-								<li><a href="program.html">Program</a></li>
-								<li><a href="trainer.html">Trainer</a></li>
-							</ul>
-						</li>
-						<li><a href="contacts.html">Help</a></li>
-					</ul>
-				</nav>
 			</div>
 		</div>
 	</header>
 	<!-- =============== HEADER END =============== -->
 
 	<!-- ============ S-CROSSFIT-SLIDER ============ -->
-	<section class="s-crossfit-slider">
+	<section class="s-crossfit-slider" id="section1">
 		<div class="crossfit-slider">
 			<div class="crossfit-slide">
 				<div class="crossfit-slider-effect effect-1">
@@ -120,7 +107,7 @@
 	<!-- ========== S-CROSSFIT-SLIDER END ========== -->
 
 	<!-- ================ S-CROSSFIT ================ -->
-	<section class="s-crossfit">
+	<section class="s-crossfit" id="section2">
 		<div class="container">
 			<img src="assets/img/placeholder-all.png" data-src="assets/img/group-circle-2.svg" alt="img" class="crossfit-icon-1 rx-lazy">
 			<img src="assets/img/placeholder-all.png" data-src="assets/img/line-red-1.svg" alt="img" class="crossfit-icon-2 rx-lazy">
@@ -131,41 +118,23 @@
 				<div class="col-md-4 crossfit-col">
 					<div class="crossfit-item">
 						<img class="rx-lazy" src="assets/img/placeholder-all.png" data-src="assets/img/dumbellicon.png" alt="img">
-						<style>
-							h3{
-								color:rgb(242, 56, 73);
-							}
-						</style>
 						<h3>Personalized Workouts</h3>
 						<p>Accommodate your evolving fitness goals, changes in gym equipment, and the need for added variety to keep your motivation levels high.</p>
 					</div>
 				</div>
-				<div class="col-md-4 crossfit-col">
-					<div class="crossfit-item">
-						<img class="rx-lazy" src="assets/img/placeholder-all.png" data-src="assets/img/timericon.png" alt="img">
-						<h3>Progress Tracking</h3>
-						<p>Explore detailed insights on muscle engagement, exercise accomplishments, and impressive workout streaks, empowering you to track your progress with ease.</p>
-					</div>
-				</div>
-				<div class="col-md-4 crossfit-col">
-					<div class="crossfit-item">
-						<img class="rx-lazy" src="assets/img/placeholder-all.png" data-src="assets/img/betterappleicon.png" alt="img">
-						<h3>Goal-Based Meal Plan</h3>
-						<p>Personalize your meal plan to fit your preferences and restrictions. Enjoy easy-to-follow recipes, indulge in your favorite foods, and transform your body like never before.</p>
-					</div>
-				</div>
+				<p class="slogan">We understand the challenges that individuals face when navigating the world of fitness and nutrition. That's why our AI fitness app takes the complexity out of the equation. No more sifting through endless articles or feeling lost in the sea of conflicting advice. Our app serves as your virtual fitness companion, guiding you every step of the way with clear and concise instructions.</p>
 			</div>
 		</div>
 	</section>
 	<!-- ============== S-CROSSFIT END ============== -->
 
 	<!-- ============== S-OUR-PROGRAMS ============== -->
-	<section class="s-our-programs" style="background-image: url(assets/img/man-g813fbee42_1280.jpg);">
+	<section class="s-our-programs" style="background-image: url(assets/img/man-g813fbee42_1280.jpg);" id="section3">
 		<div class="mask"></div>
 		<div class="our-programs-effect" style="background-image: url(assets/img/bg-programs.svg);"></div>
 		<div class="container">
-			<h2 class="title-decor">BFit <span>Blogs</span></h2>
-			<p class="slogan">Learn the latest in training and nutrition from experts and trainers you can trust.</p>
+			<h2 class="title-decor">Product <span>Features</span></h2>
+			<p class="slogan">djasdsds.</p>
 			<div class="row">
 				<div class="col-sm-6 col-md-3 program-col">
 					<div class="program-item">
@@ -233,7 +202,7 @@
 	<!-- ============ S-OUR-PROGRAMS END ============ -->
 
 	<!-- =============== S-OUT-TRAINER =============== -->
-	<section class="s-out-trainer" style="background-image: url(assets/img/bg-contacts.svg);">
+	<section class="s-out-trainer" style="background-image: url(assets/img/bg-contacts.svg);" id="section4">
 		<div class="container">
 			<h2 class="title-decor">Our <span>Team</span></h2>
 			<p class="slogan">Meet our dedicated team!</p>
@@ -330,7 +299,7 @@
 	<!-- ========== S-CROSSFIT-BANNER END ========== -->
 
 	<!-- ============== S-CLUB-CARDS ============== -->
-	<section class="s-club-cards">
+	<section class="s-club-cards" id="section5">
 		<div class="container">
 			<h2 class="title-decor">Memberships</h2>
 			<p class="slogan">Choose the membership that fits your fitness goals and unlock a world of unlimited possibilities.</p>
@@ -361,10 +330,9 @@
 							<div class="date"><span>99</span>premium</div>
 						</div>
 						<ul class="list">
-							<li>Billed monthly</li>
-							<li>Cancel anytime</li>
-							<li>7 day free trial</li>
-							<li>insert premium features here</li>
+							<li>Standard features, plus...</li>
+							<li>Connect to nearby BFit users</li>
+							<li>Find fitness communities near you</li>
 						</ul>
 						<a href="program.html" class="btn">subscribe now</a>
 					</div>
@@ -519,7 +487,7 @@
 	<!--============== RELATED POSTS END ==============-->
 
 	<!-- =========== S-TRAINING-SCHEDULE =========== -->
-	<section class="s-training-schedule" style="background-image: url(assets/img/bg-table-1.svg);">
+	<section class="s-training-schedule" style="background-image: url(assets/img/bg-table-1.svg);" id="section6">
 		<div class="container">
 			<h2 class="title-decor">Release <span>Schedule</span></h2>
 			<p class="slogan">Stay tuned for the launch of BFit later this year and join us in experiencing the future of fitness!</p>
@@ -531,7 +499,7 @@
 	<!-- ========= S-TRAINING-SCHEDULE END ========= -->
 
 	<!-- ================== FOOTER ================== -->
-	<section class="s-counter" style="background-image: url(assets/img/woman-g3661d63b5_1280.jpg);">
+	<section class="s-counter" style="background-image: url(assets/img/woman-g3661d63b5_1280.jpg);" id="section7">
 		<div class="mask"></div>
 		<div class="container">
 			<h2 class="title-decor">Countdown to <span>Stumberg Finals</span></h2>
