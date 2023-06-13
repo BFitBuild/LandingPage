@@ -2091,7 +2091,7 @@ blockquote:before {
     .program-item .program-item-back:before {
       content: '';
       position: absolute;
-      border: 5px solid #e53613;
+      border: 5px solid #e8e1cf;
       top: -14px;
       bottom: -14px;
       left: 50%;

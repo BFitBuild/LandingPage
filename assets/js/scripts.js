@@ -343,7 +343,7 @@
 			var timeinterval = setInterval(updateClock, 1000);
 		}
 
-		var deadline = new Date('2023-06-30T00:00:00');
+		var deadline = new Date('2023-10-27T00:00:00');
 		initializeClock('clockdiv', deadline);
 	}
 
